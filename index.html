@@ -55,13 +55,18 @@
                 placeholder: '搜索',              
                 // 支持本地化
                 placeholder: {
-                    '/zh-cn/': '搜索',
-                    '/': 'Type to search'
+                    '/': '搜索'
                 },
                 noData: '找不到结果',
                 depth: 4,
                 hideOtherSidebarContent: false,
-                namespace: 'Docsify-Guide',
+            },
+
+            pagination: {
+                previousText: '上一章',  // 自定义“上一章”文本
+                nextText: '下一章',      // 自定义“下一章”文本
+                crossChapter: true,     // 允许跨章节导航
+                crossChapterText: true  // 显示章节标题
             },
 
             count:{
