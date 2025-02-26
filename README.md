@@ -1,3 +1,16 @@
-# Headline
+<div align="center">
+    <h1>Generator</h1>
+</div>
 
-> An awesome project.
+你是否希望在使用[Testlib](https://github.com/MikeMirzayanov/testlib)出题时：
+
+- 对于generator不需要写批处理脚本。
+
+- 测试数据强度，以及针对错解随机数据。
+
+- 能够方便快速地生成树，包括具有特殊性质的树（链、菊花图、指定高度的树、限制最大度数的树、限制最大儿子数的树、菊花带链）。
+
+- 能够方便快速地生成图，包括具有特殊性质的图（二分图、有向无环图、环图、轮图、网格图、基环树、仙人掌、森林）。
+
+- 能够方便快速地生成凸包、简单多边形。
+
