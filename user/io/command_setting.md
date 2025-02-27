@@ -34,7 +34,7 @@ CommandFunc(T&& func, std::string args);
 
 需要注意的是，上述行为在不同系统和条件下的行为表现存在**差异**：
 
-- 对于Windows系统，使用`CommandPath`会对输入输出重定向，因为它的实现方式不是通过命令行`> 1.in`实现的。
+- 对于Windows系统，使用`CommandPath`会对输入输出重定向，因为它的实现方式不是通过命令行重定向（如`> 1.in`）实现的。
 
 - 对于其他情况，包括Linux系统和使用`CommandFunc`的时候，对于输入输出需要自行添加重定向的命令行参数。
 
