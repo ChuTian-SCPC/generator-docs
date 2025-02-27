@@ -1,4 +1,3 @@
-[返回目录](../../home.md)
 
 ### development
 
@@ -139,5 +138,3 @@
   - make_outputs_exe：根据data的exe文件，生成编号从start到end的.out。
   - init_gen：testlib相关初始化。
   - compare：对拍（只支持Windows）。
-
-[返回目录](../../home.md)

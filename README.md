@@ -18,6 +18,12 @@ Generator是基于testlib.h库封装的一个出题辅助工具库。
 
 它实现了以上的功能，并且提供了较高的扩展性。
 
+代码遵循MIT协议，欢迎使用本项目！如果您觉得这个项目对您有帮助，请给我们一个⭐️Star支持，也可以向其他出题人推荐！
+
+如果您在使用中遇到bug，发现问题以及有需要加入的功能需求，可以提出[Issue](https://github.com/ChuTian-SCPC/ACM-generator/issues/new)或者[Discussion](https://github.com/ChuTian-SCPC/ACM-generator/discussions/new/choose)。
+
+您也可以对仓库fork后修正其中的问题或实现需求，提交[PR](https://github.com/ChuTian-SCPC/ACM-generator/pulls)。
+
 ### 快速开始
 
 #### 编译器版本
