@@ -17,6 +17,7 @@
   * [随机整数](/user/rand_numeric/rand_int.md) 
 * 进阶用法
   * [设置命令行参数](/user/io/command_setting.md)
+  * [CommandFunc外部传参](/user/io/command_func_extra.md)
 * 开发者手册
   * [版本更迭](/developer/version.md)
   * 相关问题

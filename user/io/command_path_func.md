@@ -27,3 +27,5 @@ CommandFunc(T&& s);
 ```
 
 `T`是一个可转换为`std::function<void()>`的类型，包括函数指针，lambda函数，仿函数，std::bind等。
+
+注意传入的函数是无传参的，如果希望能够使用有传参的函数，详见[CommandFunc外部传参](command_func_extra.md)

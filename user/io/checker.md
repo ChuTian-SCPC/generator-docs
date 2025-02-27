@@ -17,6 +17,8 @@ enum Checker {
 
 如需特殊评判需求（如SPJ）或默认checker无法满足需求，可参照testlib.h规范自行编写checker。
 
+自行编写的checker可以是可执行文件路径或者函数，具体可以参考[可执行路径与函数管理](command_path_func.md)。
+
 **Windows系统限制**：请勿在Windows系统下使用CommandFunc形式的checker，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
 
 ### 时间限制
