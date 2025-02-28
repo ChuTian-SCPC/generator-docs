@@ -16,11 +16,11 @@
 
 以上的`time_limit`表示限制标程运行的时间，默认为不限制。
 
-如果需要限制时间则不能在Windows系统下使用`CommandFunc`，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+**注意**：如果需要限制时间则不能在Windows系统下使用`CommandFunc`，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
 
 ### 使用示例
 
-类似[生成标准输入文件](inputs.md#使用示例),你同样可以用两种方法(`CommandPath`和`CommandFunc`)生成标准输出文件。
+类似[生成标准输入文件](/user/io/inputs.md#使用示例),你同样可以用两种方法(`CommandPath`和`CommandFunc`)生成标准输出文件。
 
 上述说明了`CommandFunc`在Windows系统下存在的问题。
 

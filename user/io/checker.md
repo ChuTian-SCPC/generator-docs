@@ -19,13 +19,13 @@ enum Checker {
 
 自行编写的checker可以是可执行文件路径或者函数，具体可以参考[可执行路径与函数管理](command_path_func.md)。
 
-**Windows系统限制**：请勿在Windows系统下使用CommandFunc形式的checker，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+**注意**：请勿在Windows系统下使用CommandFunc形式的checker，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
 
 ### 时间限制
 
 判题时，会有时间限制，以毫秒(ms)作为单位，如果不想有限制，可以使用`time_limit_inf`作为参数。
 
-对于存在时间限制的情况：
+对于[比对(Compare)](compare.md)的时间限制：
 
 - 实际判题的时间会是`time_limit`的`time_limit_over_ratio`倍。
 

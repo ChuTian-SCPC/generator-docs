@@ -28,9 +28,9 @@
 
 - `same_log_for_class`：控制在生成随机数组、树、图和几何时，对于同一随机函数中重复出现的相同警告信息，是否只显示一次。默认为`false`，即不显示重复信息。
 
-- `time_limit_over_ratio`：控制实际测试的时间为所给`time_limit`的倍数，默认为$2$。该值应大于等于$1$。
+- `time_limit_over_ratio`：在compare中，控制实际测试的时间为所给`time_limit`的倍数，默认为$2$。该值应大于等于$1$。
 
-- `time_limit_check_ratio`：控制对于超时为所给`time_limit`的倍数之内的代码进行结果正误的检测，默认为$2$。该值应小于等于`time_limit_over_ratio`。
+- `time_limit_check_ratio`：在compare中，控制对于超时为所给`time_limit`的倍数之内的代码进行结果正误的检测，默认为$2$。该值应小于等于`time_limit_over_ratio`。
 
 - `default_seed`：控制是否使用默认的随机种子，默认为`true`，即使用默认的随机种子。
 

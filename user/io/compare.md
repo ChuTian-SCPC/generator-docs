@@ -36,7 +36,13 @@
 
 - `compare(int time_limit, T checker, Args... args)`：测试所有的样例。
 
-如果需要限制时间则不能在Windows系统下使用`CommandFunc`，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+**注意**：
+
+如果需要限制时间则不能在Windows系统下使用`CommandFunc`。
+
+同样也不建议checker在Windows系统下使用`CommandFunc`。
+
+详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
 
 `T`可以是默认的checker也可以是自定义的checker，具体可以参考[本地判题和SPJ](checker.md)。
 
