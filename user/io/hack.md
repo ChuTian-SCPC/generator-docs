@@ -4,7 +4,7 @@
 
 运行hack程序得到的结果会在工作目录下新建一个`hack_folder`文件夹放入，默认值为`hack`。
 
-如果需要修改请参考[设置](../setting/setting.md)。
+如果需要修改请参考[设置](/user/setting/setting.md)。
 
 ### 函数
 
@@ -44,7 +44,7 @@ void hack(
 
 同样也不建议checker在Windows系统下使用`CommandFunc`。
 
-详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+详见[Windows中CommandFunc的问题](/developer/problem/windows.md)。
 
 ### 时间限制
 

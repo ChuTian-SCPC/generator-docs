@@ -14,7 +14,11 @@
 
 最后一个函数的`R`需要为整型，`S`，`T`，`U`需要为能转换成`R`的类型。
 
-有上下界的生成算法**并不**均匀随机，如果需要深入理解实现算法详见[rand_sum随机算法](/developer/algorithm/rand_sum.md)
+**注意**：
+
+- 对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
+
+- 有上下界的生成算法**并不**均匀随机，如果需要深入理解实现算法详见[rand_sum随机算法](/developer/algorithm/rand_sum.md)
 
 ### 示例
 

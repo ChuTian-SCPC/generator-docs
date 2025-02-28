@@ -17,21 +17,21 @@ enum Checker {
 
 如需特殊评判需求（如SPJ）或默认checker无法满足需求，可参照testlib.h规范自行编写checker。
 
-自行编写的checker可以是可执行文件路径或者函数，具体可以参考[可执行路径与函数管理](command_path_func.md)。
+自行编写的checker可以是可执行文件路径或者函数，具体可以参考[可执行路径与函数管理](/user/io/command_path_func.md)。
 
-**注意**：请勿在Windows系统下使用CommandFunc形式的checker，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+**注意**：请勿在Windows系统下使用CommandFunc形式的checker，详见[Windows中CommandFunc的问题](/developer/problem/windows.md)。
 
 ### 时间限制
 
 判题时，会有时间限制，以毫秒(ms)作为单位，如果不想有限制，可以使用`time_limit_inf`作为参数。
 
-对于[比对(Compare)](compare.md)的时间限制：
+对于[比对(Compare)](/user/io/compare.md)的时间限制：
 
 - 实际判题的时间会是`time_limit`的`time_limit_over_ratio`倍。
 
 - 实际用checker检查该解正误的时间是`time_limit`的`time_limit_check_ratio`倍。
 
-相关参数可在[设置](../setting/setting.md)中调整。
+相关参数可在[设置](/user/setting/setting.md)中调整。
 
 此目的在于，对于一些可能需要卡掉的超时解，如果他实际运行时间是时间限制很小的一个倍数之内的话，可能会因为测评机波动以及一些优化方式卡进去，出题人可以判断在这种情况下是否应该加强数据或者减少时间限制。
 

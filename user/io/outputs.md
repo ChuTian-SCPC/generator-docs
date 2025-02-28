@@ -2,7 +2,7 @@
 
 标准输出文件以`output_suffix`结尾，它的默认值是`.out`。
 
-如果需要修改请参考[设置](../setting/setting.md)。
+如果需要修改请参考[设置](/user/setting/setting.md)。
 
 ### 函数
 
@@ -12,11 +12,11 @@
 
 = `fill_outputs(T program, bool cover_exist = true, int time_limit = _setting::time_limit_inf)`：对于所有标准输入文件生成标准输出文件，`cover_exit`表示对于已经存在的标准输出文件是否要覆盖。
 
-以上的`program`都必须是可执行文件路径或者函数，在一般情况下是可转换为`Path`的类型或者可转换为`std::function<void()>`的类型，具体可以参考[可执行路径与函数管理](command_path_func.md)。
+以上的`program`都必须是可执行文件路径或者函数，在一般情况下是可转换为`Path`的类型或者可转换为`std::function<void()>`的类型，具体可以参考[可执行路径与函数管理](/user/io/command_path_func.md)。
 
 以上的`time_limit`表示限制标程运行的时间，默认为不限制。
 
-**注意**：如果需要限制时间则不能在Windows系统下使用`CommandFunc`，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+**注意**：如果需要限制时间则不能在Windows系统下使用`CommandFunc`，详见[Windows中CommandFunc的问题](/developer/problem/windows.md)。
 
 ### 使用示例
 

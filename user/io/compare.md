@@ -6,11 +6,11 @@
    
 3. 在写题自测时，用于检查自己的代码与标准程序在哪些测试样例上存在差异。
 
-测试需要有已经生成好的[标准输入](inputs.md)和[标注输出](outputs.md)。
+测试需要有已经生成好的[标准输入](/user/io/inputs.md)和[标注输出](/user/io/outputs.md)。
 
 比对会生成的数据会在工作目录下新建一个`compare_folder`文件夹放入，它的默认值是`cmp`。
 
-如果需要修改请参考[设置](../setting/setting.md)。
+如果需要修改请参考[设置](/user/setting/setting.md)。
 
 ### 结果存储规则
 
@@ -42,11 +42,11 @@
 
 同样也不建议checker在Windows系统下使用`CommandFunc`。
 
-详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+详见[Windows中CommandFunc的问题](/developer/problem/windows.md)。
 
-`T`可以是默认的checker也可以是自定义的checker，具体可以参考[本地判题和SPJ](checker.md)。
+`T`可以是默认的checker也可以是自定义的checker，具体可以参考[本地判题和SPJ](/user/io/checker.md)。
 
-`Args`可以是可执行文件路径或者函数，具体可以参考[可执行路径与函数管理](command_path_func.md)。它可以是任意个可执行文件路径或者函数，表示要测试多个代码。
+`Args`可以是可执行文件路径或者函数，具体可以参考[可执行路径与函数管理](/user/io/command_path_func.md)。它可以是任意个可执行文件路径或者函数，表示要测试多个代码。
 
 ### 使用示例
 

@@ -2,7 +2,7 @@
 
 标准输入文件以`input_suffix`结尾，它的默认值是`.in`。
 
-如果需要修改请参考[设置](../setting/setting.md)。
+如果需要修改请参考[设置](/user/setting/setting.md)。
 
 ### 函数
 
@@ -16,7 +16,7 @@
 
 - `fill_inputs(T program)`：从编号$1$开始查找，生成$1$个未被使用的最小编号的标准输入文件。
 
-以上的`program`都必须是可执行文件路径或者函数，在一般情况下是可转换为`Path`的类型或者可转换为`std::function<void()>`的类型，具体可以参考[可执行路径与函数管理](command_path_func.md)。
+以上的`program`都必须是可执行文件路径或者函数，在一般情况下是可转换为`Path`的类型或者可转换为`std::function<void()>`的类型，具体可以参考[可执行路径与函数管理](/user/io/command_path_func.md)。
 
 ### 使用示例
 
@@ -120,7 +120,7 @@ gen.exe 5 > 5.in
 
 1. 修改`default_stable_seed`。
 
-参考[设置](../setting/setting.md)，可以修改`default_stable_seed`，从而改变随机种子：
+参考[设置](/user/setting/setting.md)，可以修改`default_stable_seed`，从而改变随机种子：
 
 ```cpp
 #include "generator.h"
@@ -146,7 +146,7 @@ gen.exe test 5 > 5.in
 
 2. 设置`CommandPath`或`CommandFunc`的命令行参数。
 
-可以参照[设置命令行参数](command_setting.md)自行实现所需要的命令行参数。
+可以参照[设置命令行参数](/user/io/command_setting.md)自行实现所需要的命令行参数。
 
 ```cpp
 #include "generator.h"

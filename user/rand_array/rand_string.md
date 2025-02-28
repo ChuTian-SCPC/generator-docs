@@ -1,4 +1,4 @@
-生成随机字符串时需要使用字符集，我们提供了一些[常用字符集](../enum/char_type.md)供您选择。如果您需要自定义字符集，可以自行参考[Testlib](https://github.com/MikeMirzayanov/testlib)库的相关文档。
+生成随机字符串时需要使用字符集，我们提供了一些[常用字符集](/user/enum/char_type.md)供您选择。如果您需要自定义字符集，可以自行参考[Testlib](https://github.com/MikeMirzayanov/testlib)库的相关文档。
 
 ### 函数
 
@@ -12,7 +12,7 @@
 
 - `rand_string(std::string format)`：返回一个字符串，格式由`format`决定。
 
-**注意**：对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](../setting/setting.md)。
+**注意**：对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
 
 ### 示例
 

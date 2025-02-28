@@ -4,6 +4,8 @@
 
 - `rand_p<T, E>(T n, E s)`：返回一个长度为$n$的随机排列`vector<E>`，从$s$开始。
 
+**注意**：对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
+
 ### 示例
 
 ```cpp

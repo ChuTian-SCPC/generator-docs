@@ -8,11 +8,11 @@ CF在出题时要求要有数据校验器，检查生成数据的格式是否正
 
 - `validate(T program, std::string case_name = _setting::testcase_folder)`：校验所有的样例。
 
-以上的`program`都必须是可执行文件路径或者函数，在一般情况下是可转换为`Path`的类型或者可转换为`std::function<void()>`的类型，具体可以参考[可执行路径与函数管理](command_path_func.md)。
+以上的`program`都必须是可执行文件路径或者函数，在一般情况下是可转换为`Path`的类型或者可转换为`std::function<void()>`的类型，具体可以参考[可执行路径与函数管理](/user/io/command_path_func.md)。
 
 `case_name`表示要校验数据所在的子文件夹的名称，默认为测试样例所在的文件夹。
 
-**注意**：在Windows系统中建议不要用`CommandFunc`做为数据校验器，详见[Windows中CommandFunc的问题](../../developer/problem/windows.md)。
+**注意**：在Windows系统中建议不要用`CommandFunc`做为数据校验器，详见[Windows中CommandFunc的问题](/developer/problem/windows.md)。
 
 ### 使用示例
 

@@ -17,7 +17,7 @@ template<typename T, typename = typename std::enable_if<IsPathConstructible<T>::
 CommandPath(T&& s);
 ```
 
-`T`是一个可转换为`Path`的类型，详见[路径](path.md)。
+`T`是一个可转换为`Path`的类型，详见[路径](/user/io/path.md)。
 
 `CommandFunc`表示一个函数，它常用的构造函数如下：
 
@@ -28,4 +28,4 @@ CommandFunc(T&& s);
 
 `T`是一个可转换为`std::function<void()>`的类型，包括函数指针，lambda函数，仿函数，std::bind等。
 
-注意传入的函数是无传参的，如果希望能够使用有传参的函数，详见[CommandFunc外部传参](command_func_extra.md)
+注意传入的函数是无传参的，如果希望能够使用有传参的函数，详见[CommandFunc外部传参](/user/io/command_func_extra.md)
