@@ -2,13 +2,13 @@
 
 ### 函数
 
-- `rand_string(int n, _enum::CharType type = _enum::LowerLetter)`：返回一个长度为`n`的随机字符串，字符集为`type`，默认是小写字母。
+- `rand_string(int n, _enum::CharType type = _enum::LowerLetter)`：返回一个长度为$n$的随机字符串，字符集为`type`，默认是小写字母。
 
-- `rand_string(int from, int to, _enum::CharType type = _enum::LowerLetter)`：返回一个长度在`[from, to]`之间的随机字符串，字符集为`type`，默认是小写字母。
+- `rand_string(int from, int to, _enum::CharType type = _enum::LowerLetter)`：返回一个长度在$[from, to]$之间的随机字符串，字符集为`type`，默认是小写字母。
 
-- `rand_string(int n, std::string format)`：返回一个长度为`n`的随机字符串，字符集由`format`决定。
+- `rand_string(int n, std::string format)`：返回一个长度为$n$的随机字符串，字符集由`format`决定。
 
-- `rand_string(int from, int to, std::string format)`：返回一个长度在`[from, to]`之间的随机字符串，字符集由`format`决定。
+- `rand_string(int from, int to, std::string format)`：返回一个长度在$[from, to]$之间的随机字符串，字符集由`format`决定。
 
 - `rand_string(std::string format)`：返回一个字符串，格式由`format`决定。
 

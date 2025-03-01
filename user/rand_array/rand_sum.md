@@ -2,13 +2,13 @@
 
 ### 函数
 
-- ` rand_sum<T>(int size,T sum)`：返回一个长度为`size`的随机数组`vector<T>`，数组的和为`sum`，且数组元素为正整数($\ge 1$)。
+- ` rand_sum<T>(int size,T sum)`：返回一个长度为$size$的随机数组`vector<T>`，数组的和为$sum$，且数组元素为正整数($\ge 1$)。
 
-- `rand_sum<T>(int size,T sum,T min_part)`：返回一个长度为`size`的随机数组`vector<T>`，数组的和为`sum`，且数组元素大于等于`min_part`。
+- `rand_sum<T>(int size,T sum,T min_part)`：返回一个长度为$size$的随机数组`vector<T>`，数组的和为$sum$，且数组元素大于等于`min_part`。
 
-- `rand_sum<T>(int size, T sum, T from, T to)`：返回一个长度为`size`的随机数组`vector<T>`，数组和为`sum`，且数组元素范围为$[from,to]$。
+- `rand_sum<T>(int size, T sum, T from, T to)`：返回一个长度为$size$的随机数组`vector<T>`，数组和为$sum$，且数组元素范围为$[from,to]$。
 
-- `rand_sum<R, S, T, U>(int size, S sum, T from, U to)`：返回一个长度为`size`的随机数组`vector<R>`，数组和为`sum`，且数组元素范围为$[from,to]$。
+- `rand_sum<R, S, T, U>(int size, S sum, T from, U to)`：返回一个长度为$size$的随机数组`vector<R>`，数组和为$sum$，且数组元素范围为$[from,to]$。
 
 前三个函数中`T`需要为整型。
 
@@ -18,7 +18,7 @@
 
 - 对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
 
-- 有上下界的生成算法**并不**均匀随机，如果需要深入理解实现算法详见[rand_sum随机算法](/developer/algorithm/rand_sum.md)
+- 有上下界的生成算法**并不**是均匀随机的，如果需要深入理解实现算法详见[rand_sum随机算法](/developer/algorithm/rand_sum.md)
 
 ### 示例
 

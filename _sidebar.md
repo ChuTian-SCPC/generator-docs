@@ -8,7 +8,7 @@
     * [设置](/user/setting/setting.md)
   * 基础工具
     * [工具函数](/user/tools/tools.md)
-    * [初始化](/user/io/init.md)    
+    * [初始化](/user/io/init.md)
     * [路径](/user/io/path.md)
     * [范围解析](/user/rand_numeric/format.md)  
     * [常用字符集](/user/enum/char_type.md)
@@ -29,9 +29,11 @@
     * [随机字符](/user/rand_numeric/rand_char.md)
     * [不等概率随机](/user/rand_numeric/rand_prob.md)
   * 生成随机数组
+    * [随机数组](/user/rand_array/rand_vector.md)
     * [随机字符串](/user/rand_array/rand_string.md)
     * [随机排列](/user/rand_array/rand_p.md)
     * [总和为指定值的随机数组](/user/rand_array/rand_sum.md)
+    * [随机数组其元素出现次数为给定值](/user/rand_array/shuffle_index.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)

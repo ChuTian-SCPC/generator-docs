@@ -2,7 +2,7 @@
 
 - `rand_prob(const Con& map)`：
 
-    - map的类型为`std::map<Key, U>`或者`std::unordered_map<T, U>`，其中`U`为整型。
+    - map的类型为`std::map<T, U>`或者`std::unordered_map<T, U>`，其中`U`为整型。
 
     - 返回一个类型为`T`的随机数，随机数生成的概率由map决定。
 

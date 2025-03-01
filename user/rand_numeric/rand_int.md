@@ -32,7 +32,7 @@ int main() {
 
 在testlib中，`unsigned int`, `unsigned long`, `unsigned long long`这些类型是**不支持**的。
 
-这也会导致即使`T`是long long，但是`from`和`to`的范围超过了long long，也会导致生成失败。
+这也会导致即使`T`是`long long`，但是$from$和$to$的范围超过了`long long`，也会导致生成失败。
 
 比如以下代码是会在生成时候fail的：
 
