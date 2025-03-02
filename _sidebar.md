@@ -34,6 +34,8 @@
     * [随机排列](/user/rand_array/rand_p.md)
     * [总和为指定值的随机数组](/user/rand_array/rand_sum.md)
     * [随机数组其元素出现次数为给定值](/user/rand_array/shuffle_index.md)
+    * [随机回文串](/user/rand_array/rand_palindrome.md)
+    * [随机合法括号序列](/user/rand_array/rand_bracket_seq.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)
@@ -41,6 +43,6 @@
   * [版本更迭](/developer/version.md)
   * [修改代码](/developer/modify.md)
   * 相关问题
-    * [Windows中CommandFunc的问题](./developer/problem/windows.md)
+    * [Windows中CommandFunc的问题](/developer/problem/windows.md)
   * 随机算法
     * [rand_sum随机算法](/developer/algorithm/rand_sum.md)
