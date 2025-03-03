@@ -39,7 +39,7 @@
     * [随机合法括号序列](/user/rand_array/rand_bracket_seq.md)
   * 生成随机树和图
     * [点和边](/user/rand_tree/node_edge.md)
-    * [树和图的基础](/user/rand_tree/basic_tree_graph.md)
+    * [树和图基础](/user/rand_tree/basic_tree_graph.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)
