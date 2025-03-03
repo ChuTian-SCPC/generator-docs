@@ -12,6 +12,7 @@
     * [路径](/user/io/path.md)
     * [范围解析](/user/rand_numeric/format.md)  
     * [常用字符集](/user/enum/char_type.md)
+    * [类成员变量的获取和设置](/user/tools/setter_getter.md)
   * 数据生成与测试
     * [可执行路径与函数管理](/user/io/command_path_func.md)
     * [生成标准输入文件](/user/io/inputs.md)
@@ -36,13 +37,20 @@
     * [随机数组其元素出现次数为给定值](/user/rand_array/shuffle_index.md)
     * [随机回文串](/user/rand_array/rand_palindrome.md)
     * [随机合法括号序列](/user/rand_array/rand_bracket_seq.md)
+  * 生成随机树和图
+    * [点和边](/user/rand_tree/node_edge.md)
+    * [树和图的基础](/user/rand_tree/basic_tree_graph.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)
+    * [自定义输出格式](/user/tools/set_output.md)
+    * [自定义生成器](/user/tools/set_generator.md)
 * 开发者手册
   * [版本更迭](/developer/version.md)
   * [修改代码](/developer/modify.md)
   * 相关问题
     * [Windows中CommandFunc的问题](/developer/problem/windows.md)
-  * 随机算法
+  * 随机算法与设计思路
+    * [结点编号的设计](/developer/algorithm/node_index.md)
+    * [Gen的设计](/developer/algorithm/gen.md)
     * [rand_sum随机算法](/developer/algorithm/rand_sum.md)
