@@ -47,6 +47,7 @@
     * [指定高度的树](/user/rand_tree/height_tree.md)
     * [限制最大度数的树](/user/rand_tree/max_degree_tree.md)
     * [限制最大儿子数的树](/user/rand_tree/max_son_tree.md)
+    * [菊花带链](/user/rand_tree/flower_chain.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)

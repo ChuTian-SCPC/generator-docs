@@ -6,7 +6,7 @@
 MaxSonTree(int node = 1, int begin_node = 1, int root = 1, int max_son = -1)
 ```
 
-有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)
+有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)。
 
 ### 禁用函数
 
@@ -22,7 +22,7 @@ void set_is_rooted(bool is_rooted);
 
 限制最大儿子数的树通过`max_son`对度数进行限制。
 
-`max_son`默认为$-1$，即随机度数。
+`max_son`默认为$-1$，表示随机度数。
 
 对于`max_son`的限制为：
 

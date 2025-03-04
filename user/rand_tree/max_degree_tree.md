@@ -6,7 +6,7 @@
 MaxDegreeTree(int node = 1, int begin_node = 1, bool is_rooted = false, int root = 1, int max_degree = -1)
 ```
 
-有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)
+有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)。
 
 ### 额外变量
 
@@ -14,7 +14,7 @@ MaxDegreeTree(int node = 1, int begin_node = 1, bool is_rooted = false, int root
 
 对于**有根树**，度数是指入度和出度之和。
 
-`max_degree`默认为$-1$，即随机度数。
+`max_degree`默认为$-1$，表示随机度数。
 
 对于`max_degree`的限制为：
 

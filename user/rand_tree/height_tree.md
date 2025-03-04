@@ -6,7 +6,7 @@
 HeightTree(int node = 1, int begin_node = 1, int root = 1, int height = -1)
 ```
 
-有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)
+有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)。
 
 ### 禁用函数
 
@@ -22,7 +22,7 @@ void set_is_rooted(bool is_rooted);
 
 指定高度的树通过`height`表示树的高度。
 
-`height`默认为$-1$，即随机高度。
+`height`默认为$-1$，表示随机高度。
 
 对于`height`的限制为：
 

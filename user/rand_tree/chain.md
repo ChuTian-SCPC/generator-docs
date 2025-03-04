@@ -6,7 +6,7 @@
 Chain(int node = 1, int begin_node = 1, bool is_rooted = false, int root = 1)
 ```
 
-有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)
+有点权和边权的构造函数参考[树的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)。
 
 ### 示例
 
