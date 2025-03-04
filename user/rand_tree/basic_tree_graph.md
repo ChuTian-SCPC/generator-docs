@@ -40,6 +40,58 @@
 
 对于**无点权**的情况，也不能获取它的点权。
 
+由于[设计失误](/developer/algorithm/node_index.md#设计的原因)，在`unweight`，`node_weight`，`edge_weight`，`both_weight`这四种形式中：
+
+- Edge<EdgeType> ：表示边权类型为`EdgeType`的边。
+
+- NodeWeight<NodeType> ：表示类型为`NodeType`的点权。
+
+### 构造函数
+
+所有的树和图都有四种对应不同形式的构造函数，它们前面的参数和默认值都是一致的，除了有点权、边权的时候最后可以传入点权、边权的生成函数。
+
+比如对于`Graph`，无点权，边权的构造函数是：
+
+```cpp
+Graph(int node_count = 1, int edge_count = 0, int begin_node = 1)
+```
+
+而有点权，边权的情况下则是：
+
+```cpp
+Graph(int node_count = 1, int edge_count = 0, int begin_node = 1, NodeGenFunction nodes_weight_function = nullptr); // 有点权
+
+Graph(int node_count = 1, int edge_count = 0, int begin_node = 1, EdgeGenFunction edges_weight_function = nullptr); // 有边权
+
+Graph(int node_count = 1, int edge_count = 0, int begin_node = 1, 
+    NodeGenFunction nodes_weight_function = nullptr, EdgeGenFunction edges_weight_function = nullptr); // 有点权和边权
+```
+
+因此在后续介绍树和图的构造函数时，我们将主要展示无权重的基本形式。对于带权重的版本，其构造函数是在基本形式的基础上，分别在末尾添加了相应的权重生成函数参数，具体形式与上述示例一致。
+
+#### 特例：`Tree`
+
+对于`Tree`，它的构造函数是：
+
+```cpp
+// 无权重
+Tree(int node_count = 1, int begin_node = 1, bool is_rooted = false, int root = 1,
+    _enum::TreeGenerator tree_generator = _enum::RandomFather) 
+
+// 有点权
+Tree(int node_count = 1, int begin_node = 1, bool is_rooted = false, int root = 1,
+    NodeGenFunction nodes_weight_function = nullptr, _enum::TreeGenerator tree_generator = _enum::RandomFather) 
+
+// 有边权
+Tree(int node_count = 1, int begin_node = 1, bool is_rooted = false, int root = 1,
+    EdgeGenFunction edges_weight_function = nullptr, _enum::TreeGenerator tree_generator = _enum::RandomFather)
+
+// 有点权和边权
+Tree(int node_count = 1, int begin_node = 1, bool is_rooted = false, int root = 1,
+    NodeGenFunction nodes_weight_function = nullptr, EdgeGenFunction edges_weight_function = nullptr,
+    _enum::TreeGenerator tree_generator = _enum::RandomFather)
+```
+
 ### 使用方式
 
 对于所有的树和图，在设置好之后，调用`gen()`函数即可生成，然后使用`std::ostream& <<`进行输出。
@@ -47,6 +99,8 @@
 每个树和图都有默认的输出格式，一般情况下满足大部分需求。如果需要自定义输出格式，详见[自定义输出格式](/user/tools/set_output.md)。
 
 每个树和图都有默认的生成方式，如果需要自定义生成方式，详见[自定义生成器](/user/tools/set_generator.md)。
+
+如果你想要详细了解树和图的生成算法，详见[开发者手册：树的随机算法](/developer/algorithm/tree.md)和[开发者手册：图的随机算法](/developer/algorithm/graph.md)。
 
 ### 示例
 

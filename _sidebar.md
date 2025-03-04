@@ -40,6 +40,8 @@
   * 生成随机树和图
     * [点和边](/user/rand_tree/node_edge.md)
     * [树和图的基础](/user/rand_tree/basic_tree_graph.md)
+    * [树基础](/user/rand_tree/basic_tree.md)
+    * [树](/user/rand_tree/tree.h)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)
@@ -54,3 +56,4 @@
     * [结点编号的设计](/developer/algorithm/node_index.md)
     * [Gen的设计](/developer/algorithm/gen.md)
     * [rand_sum随机算法](/developer/algorithm/rand_sum.md)
+    * [树的随机算法](/developer/algorithm/tree.md)
