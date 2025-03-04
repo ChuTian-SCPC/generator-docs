@@ -29,11 +29,9 @@ enum TreeGenerator {
 
 - `use_pruefer()`：使用`Pruefer`的方式生成树。
 
-如果你想要详细了解生成使用的算法，可以参考[开发者手册：树的随机算法](/developer/algorithm/tree.md#tree)
-
 ### 示例
 
-1. 生成一个没有权重的无根树，结点数目为$10$，结点编号从$0$开始。
+1. 生成一个没有权重的无根树，结点数为$10$，结点编号从$0$开始。
 
 ```cpp
 #include "generator.h"
@@ -50,7 +48,7 @@ int main() {
 }
 ```
 
-2. 生成一个有边权的无根树，结点数目为$10$，结点编号从$1$开始，边权为整数，范围为$[-10, 10]$。
+2. 生成一个有边权的无根树，结点数为$10$，结点编号从$1$开始，边权为整数，范围为$[-10, 10]$，采用pruefer序列生成树的方式随机。
 
 ```cpp
 #include "generator.h"
@@ -65,13 +63,14 @@ int main() {
     t.set_edges_weight_function([]() {
         return rand_int(-10, 10);
     });
+    t.use_pruefer();
     t.gen();
     cout << t << endl;
     return 0;
 }
 ```
 
-3. 生成一个有点权的有根树，结点数目为$10$，结点编号从$1$开始，根结点随机选取，点权为浮点数，范围为$[0, 1]$，输出$3$位小数。
+3. 生成一个有点权的有根树，结点数为$10$，结点编号从$1$开始，根结点随机选取，点权为浮点数，范围为$[0, 1]$，输出$3$位小数。
 
 ```cpp
 #include "generator.h"
@@ -112,3 +111,27 @@ int main() {
 }
 ```
 
+4. 生成一个有点权，有边权的有根树，结点数为$5$，结点编号为从$1$开始的$5$个奇数，根节点编号为$1$且不输出，点权为整数，范围为$[-10, 10]$，边权为小写字符。
+
+```cpp
+#include "generator.h"
+#include <iomanip>
+using namespace std;
+using namespace generator::all;
+
+int main() {
+    init_gen();
+    both_weight::Tree<int, char> t(5);
+    for (int i = 1; i <= 5; i++) t.set_node_indices(i, 2 * i - 1);
+    t.set_nodes_weight_function([](){
+        return rand_int(-10, 10);
+    });
+    t.set_edges_weight_function([](){
+        return rand_char();
+    });
+    t.set_output_root(false);
+    t.gen();
+    cout << t << endl;
+    return 0;
+}
+```

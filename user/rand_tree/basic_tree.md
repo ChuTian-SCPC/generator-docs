@@ -93,3 +93,9 @@ $v$的输出格式以[_Node输出格式](/user/rand_tree/node_edge.md#输出格�
 接下来$n-1$行，每行两个正整数$u,v$，以及在有边权的情况下一个边权$w$，表示$u$和$v$之间有一条边，边权为$w$。
 
 $u$，$v$和$w$输出格式以[_Edge输出格式](/user/rand_tree/node_edge.md#e8be93e587bae6a0bce5bc8f-1)为准，你可以自定义输出格式。
+
+### 生成算法
+
+对于单纯的使用来说，并不需要详细了解生成使用的算法。
+
+如果你想要详细了解生成使用的算法，可以参考[开发者手册：树的随机算法](/developer/algorithm/tree.md)

@@ -41,7 +41,12 @@
     * [点和边](/user/rand_tree/node_edge.md)
     * [树和图的基础](/user/rand_tree/basic_tree_graph.md)
     * [树基础](/user/rand_tree/basic_tree.md)
-    * [树](/user/rand_tree/tree.h)
+    * [树](/user/rand_tree/tree.md)
+    * [链](/user/rand_tree/chain.md)
+    * [菊花图](/user/rand_tree/flower.md)
+    * [指定高度的树](/user/rand_tree/height_tree.md)
+    * [限制最大度数的树](/user/rand_tree/max_degree_tree.md)
+    * [限制最大儿子数的树](/user/rand_tree/max_son_tree.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)
