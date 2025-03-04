@@ -30,7 +30,7 @@ void set_is_rooted(bool is_rooted);
 
 - $node\_count \ge 2$时，$max\_son$的范围是$[1, node\_count - 1]$。
 
-- 对于$max\_son \gt node_count - 1$，限制相当于不存在，但依旧可以使用`gen()`生成。
+- 对于$max\_son \gt node\_count - 1$，限制相当于不存在，但依旧可以使用`gen()`生成。
 
 关于变量的获取与设置方法，请参考[获取与设置](/user/tools/setter_getter.md)。
 

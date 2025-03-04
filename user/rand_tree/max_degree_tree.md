@@ -24,7 +24,7 @@ MaxDegreeTree(int node = 1, int begin_node = 1, bool is_rooted = false, int root
 
 - $node\_count \ge 3$时，$max\_degree$的范围是$[2, node\_count - 1]$。
 
-- 对于$max\_degree \gt node_count - 1$，限制相当于不存在，但依旧可以使用`gen()`生成。
+- 对于$max\_degree \gt node\_count - 1$，限制相当于不存在，但依旧可以使用`gen()`生成。
 
 关于变量的获取与设置方法，请参考[获取与设置](/user/tools/setter_getter.md)。
 
