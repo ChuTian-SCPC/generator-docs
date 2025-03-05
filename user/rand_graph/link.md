@@ -16,7 +16,7 @@ Link(int extra_edge_count = 0, _enum::LinkType link_type = _enum::LinkType::Shuf
 TreeLink(_enum::TreeLinkType link_type = _enum::TreeLinkType::Shuffle)
 ```
 
-有点权和边权的构造函数参考[图的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)。
+有点权和边权的构造函数参考[树和图的构造函数](/user/rand_tree/basic_tree_graph.md#构造函数)。
 
 ### 额外参数
 
