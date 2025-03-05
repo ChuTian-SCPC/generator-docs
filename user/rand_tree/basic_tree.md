@@ -4,7 +4,7 @@
 
 - `node_count`：树的结点数。
 
-- `begin_node`：结点编号起始值。
+- `begin_node`：结点编号起始值，默认为$1$。
 
 - `is_rooted`：是否是有根树，默认为`false`。
 
@@ -48,7 +48,7 @@
 
 如果使用了`root_ref()`，那得到的就是实际存储的值$0$。
 
-#### `edges`
+#### `edges`和`nodes_weight`
 
 `edges`常规的getter返回的是边的信息，是已经将结点转换成结点编号的情况。
 
@@ -74,25 +74,25 @@
 4 5
 ```
 
-#### `edges`和`nodes_weight`
-
-[树和图的点权和边](/user/rand_tree/basic_tree_graph.md#点权和边)中说明了这两个值只能获取，不能设置，虽然可以通过`ref`获得它的引用，但是在不清楚的情况下最好不要这么做。
+**注意**：[树和图的点权和边](/user/rand_tree/basic_tree_graph.md#点权和边)中说明了`edges`和`nodes_weight`只能获取，不能设置，虽然可以通过`ref`获得它的引用，但是在不清楚的情况下最好不要这么做。
 
 ### 输出格式
 
 所有的树的通用输出格式为:
 
-第一行一个正整数$n$表示树的结点树，如果`output_node_count`为`false`，则不输出。
+第一行一个正整数$n$表示树的结点数，如果`output_node_count`为`false`，则不输出。
 
 对于有根树，以及`output_root`为`true`的情况，第一行一个正整数$r$表示树的根结点编号。如果输出了$n$，则$n$和$r$之间用一个空格隔开。
 
 如果有点权，接下来一行输出$n$个点权$v$，之间以一个空格隔开。
 
-$v$的输出格式以[_Node输出格式](/user/rand_tree/node_edge.md#输出格式)为准，你可以自定义输出格式。
+$v$的输出格式以[点权的输出格式](/user/rand_tree/node_edge.md#输出格式)为准，你可以自定义输出格式。
 
 接下来$n-1$行，每行两个正整数$u,v$，以及在有边权的情况下一个边权$w$，表示$u$和$v$之间有一条边，边权为$w$。
 
-$u$，$v$和$w$输出格式以[_Edge输出格式](/user/rand_tree/node_edge.md#e8be93e587bae6a0bce5bc8f-1)为准，你可以自定义输出格式。
+$u$，$v$和$w$输出格式以[边的输出格式](/user/rand_tree/node_edge.md#e8be93e587bae6a0bce5bc8f-1)为准，你可以自定义输出格式。
+
+**注意**：输出最后是没有换行的。
 
 ### 生成算法
 

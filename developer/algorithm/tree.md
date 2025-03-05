@@ -43,3 +43,7 @@
 和`MaxDegreeTree`的思路类似，用$max\_son$作为上界，但是pruefer序列是描述无根树的，需要考虑特殊情况。
 
 即$times[root] = max\_son$时，找到一个点$i$满足$times[i]\neq max_son$，交换$times[root]$和$times[i]$。
+
+### FlowerChain
+
+使用`TreeLink`，将一个菊花图和一个链合并到一起。
