@@ -82,3 +82,4 @@
     * [swap_node的设计](/developer/algorithm/swap_node.md)
     * [树的随机算法](/developer/algorithm/tree.md)
     * [图的随机算法](/developer/algorithm/graph.md)
+    * [几何的随机算法](/developer/algorithm/geometry.md)
