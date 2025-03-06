@@ -57,6 +57,14 @@
     * [仙人掌](/user/rand_graph/cactus.md)
     * [森林](/user/rand_graph/forest.md)
     * [合并](/user/rand_graph/link.md)
+  * 生成随机几何图形
+    * [几何基础](/user/rand_geometry/basic_geometry.md)
+    * [几何范围解析](/user/rand_geometry/format.md)
+    * [点](/user/rand_geometry/point.md)
+    * [直线和线段](/user/rand_geometry/line_segment.md)
+    * [凸包](/user/rand_geometry/convex_hull.md)
+    * [三角形](/user/rand_geometry/triangle.md)
+    * [简单多边形](/user/rand_geometry/simple_polygon.md)
   * 进阶用法
     * [设置命令行参数](/user/io/command_setting.md)
     * [CommandFunc外部传参](/user/io/command_func_extra.md)
