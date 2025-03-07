@@ -1,5 +1,7 @@
 
-### development
+### version 0.9.0
+
+2025-3-7
 
 - 重构：
   - 让`rand_int`,`rand_odd`,`rand_even`,`rand_real`和`rand_abs`用`format`的函数支持泛型。
