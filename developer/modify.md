@@ -3,7 +3,7 @@
 你可以在修改完对应模块的代码之后使用:
 
 ```bash
-xmake l cli.amalgamate -o .
+xmake merge
 ```
 
 来重新生成头文件。

@@ -1,4 +1,9 @@
 
+### development
+
+- 新增功能：
+  - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
+
 ### version 0.9.0
 
 2025-3-7
