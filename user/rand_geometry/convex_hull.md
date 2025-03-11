@@ -6,6 +6,8 @@
 ConvexHull(int node_count = 1, T x_left_limit = 0, T x_right_limit = 0, T y_left_limit = 0, T y_right_limit = 0)
 ```
 
+**注意**：生成的凸包**不是**严格的，会存在三点共线的情况！
+
 ### 额外参数
 
 凸包有一个额外参数`max_try`，默认为$10$，表示最多尝试的次数。
