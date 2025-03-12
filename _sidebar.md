@@ -73,6 +73,7 @@
 * 开发者手册
   * [版本更迭](/developer/version.md)
   * [修改代码](/developer/modify.md)
+  * [测试](/developer/test.md)
   * 相关问题
     * [Windows中CommandFunc的问题](/developer/problem/windows.md)
   * 随机算法与设计思路

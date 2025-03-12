@@ -3,6 +3,11 @@
 
 - 新增功能：
   - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
+  - 添加测试，新增workflow检测push和pr是否通过测试。
+  - DegreeTree：指定度数的树。
+
+- 修复bugs：
+  - 修复生成SimplePolygon时MSVC产生的bug。
 
 ### version 0.9.0
 
