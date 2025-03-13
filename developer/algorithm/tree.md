@@ -47,3 +47,7 @@
 ### FlowerChain
 
 使用`TreeLink`，将一个菊花图和一个链合并到一起。
+
+### DegreeTree
+
+已经指定了每个点的度数，用`Pruefer`生成。
