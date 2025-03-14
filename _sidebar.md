@@ -48,6 +48,7 @@
     * [限制最大度数的树](/user/rand_tree/max_degree_tree.md)
     * [指定度数的树](/user/rand_tree/degree_tree.md)
     * [限制最大儿子数的树](/user/rand_tree/max_son_tree.md)
+    * [指定儿子数的树](/user/rand_tree/son_tree.md)
     * [菊花带链](/user/rand_tree/flower_chain.md)
     * [图基础](/user/rand_graph/basic_graph.md)
     * [二分图](/user/rand_graph/bipartite_graph.md)
