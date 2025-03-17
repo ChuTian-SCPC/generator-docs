@@ -7,10 +7,8 @@
   - DegreeTree：指定度数的树。
 
 - 修复bugs：
-  - 修复生成SimplePolygon时MSVC产生的bug。
-
-- 修复bugs：
-  - 修复了`ConvexHull`的bug。
+  - 修复生成`SimplePolygon`时MSVC产生的bug。
+  - 修复生成`ConvexHull`时有相同的点的bug。
 ### version 0.9.0
 
 2025-3-7
