@@ -4,6 +4,8 @@
 - 新增功能：
   - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
 
+- 修复bugs：
+  - 修复了`ConvexHull`的bug。
 ### version 0.9.0
 
 2025-3-7
