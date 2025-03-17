@@ -9,6 +9,8 @@
 - 修复bugs：
   - 修复生成SimplePolygon时MSVC产生的bug。
 
+- 修复bugs：
+  - 修复了`ConvexHull`的bug。
 ### version 0.9.0
 
 2025-3-7
