@@ -43,7 +43,7 @@ void set_self_loop(bool self_loop);
 set_left_right(int left, int right)
 ```
 
-**注意**：这个会判断$left + right$是否等于`node_count`，如果不等于，会将`node_count`设置为$left + right$。
+**注意**：这个会判断$left + right$是否等于$node\_count$，如果不等于，会将$node\_count$设置为$left + right$。
 
 ### 示例
 

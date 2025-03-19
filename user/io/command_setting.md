@@ -20,7 +20,7 @@ CommandFunc(T&& func, std::string args);
 
 - `void set_args(std::string args)`: 设置命令行参数。
 
-- `void add_args`(const Args&... args): 在后面添加命令行参数，以空格隔开。
+- `void add_args(const Args&... args)`: 在后面添加命令行参数，以空格隔开。
 
 - `clear_args()`: 清空命令行参数。
 
