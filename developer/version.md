@@ -9,6 +9,7 @@
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
   - 修复生成`ConvexHull`时有相同的点的bug。
+  - 修复了dev-cpp的编译问题。
 ### version 0.9.0
 
 2025-3-7
