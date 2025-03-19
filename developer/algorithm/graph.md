@@ -30,7 +30,7 @@
 
 ### GridGraph
 
-网格图求边数上限比较麻烦，枚举一下行数然后求上限：$row\times (column - 1) + column \times (row - 1) - 2 * (row \times column - node\_count)$。
+网格图求边数上限比较麻烦，枚举一下行数然后求上限：$row\times (column - 1) + column \times (row - 1) - 2 \times (row \times column - node\_count)$。
 
 将点按照行列拍好后，对于一定要连通的先将每行连起来，然后将一列连起来。
 
