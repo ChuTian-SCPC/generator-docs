@@ -59,6 +59,7 @@
     * [基环（外向、内向）树](/user/rand_graph/pseudo_tree.md)
     * [仙人掌](/user/rand_graph/cactus.md)
     * [森林](/user/rand_graph/forest.md)
+    * [单源可达图](/user/rand_graph/start_reachable_graph.md)
     * [合并](/user/rand_graph/link.md)
   * 生成随机几何图形
     * [几何基础](/user/rand_geometry/basic_geometry.md)

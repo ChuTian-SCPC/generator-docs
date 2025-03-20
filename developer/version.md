@@ -5,6 +5,7 @@
   - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
   - 添加测试，新增workflow检测push和pr是否通过测试。
   - DegreeTree：指定度数的树。
+  - StartReachableGraph：单源可达图。一个有向图，从一个指定点出发可以到达其他所有的点。
 
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
