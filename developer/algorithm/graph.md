@@ -57,3 +57,7 @@
 ### Forest
 
 使用`Link`，将$node\_count-edge\_count$棵树合并到一起。
+
+### StartReachableGraph
+
+生成一颗有根树，根为`start`，然后随机加边。
