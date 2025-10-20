@@ -5,12 +5,15 @@
   - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
   - 添加测试，新增workflow检测push和pr是否通过测试。
   - DegreeTree：指定度数的树。
+  - SonTree：指定儿子数的树。
   - StartReachableGraph：单源可达图。一个有向图，从一个指定点出发可以到达其他所有的点。
+  - rand_range / rand_range_query: 随机（多个）范围。
 
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
   - 修复生成`ConvexHull`时有相同的点的bug。
   - 修复了dev-cpp的编译问题。
+  - 修复了rand_sum在边界上可能会越界的bug。
 ### version 0.9.0
 
 2025-3-7

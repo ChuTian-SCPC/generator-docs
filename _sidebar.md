@@ -29,6 +29,7 @@
     * [绝对值范围随机数](/user/rand_numeric/rand_abs.md)
     * [随机字符](/user/rand_numeric/rand_char.md)
     * [不等概率随机](/user/rand_numeric/rand_prob.md)
+    * [随机区间](/user/rand_numeric/rand_range.md)
   * 生成随机数组
     * [随机数组](/user/rand_array/rand_vector.md)
     * [随机字符串](/user/rand_array/rand_string.md)
@@ -37,6 +38,7 @@
     * [随机数组其元素出现次数为给定值](/user/rand_array/shuffle_index.md)
     * [随机回文串](/user/rand_array/rand_palindrome.md)
     * [随机合法括号序列](/user/rand_array/rand_bracket_seq.md)
+    * [随机多个区间](/user/rand_array/rand_range_query.md)
   * 生成随机树和图
     * [点和边](/user/rand_tree/node_edge.md)
     * [树和图的基础](/user/rand_tree/basic_tree_graph.md)
