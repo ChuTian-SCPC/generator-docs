@@ -4,7 +4,18 @@
 
 - `rand_vector<T>(int from, int to, std::function<T()> func)`：返回一个长度范围为$[from, to]$的随机数组`vector<T>`，数组元素为`func()`的返回值。
 
-**注意**：对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
+- `rand_vector<T>(int size, T from, T to, _enum::VectorOrder order, _enum::VectorUniqueness uniqueness)`：返回一个长度为$size$的随机数组`vector<T>`，数组元素为$[from, to]$之间的随机值，数组的排序顺序为`order`，数组的元素是否唯一为`uniqueness`。
+
+- `rand_vector<R, T, U>(int size, T from, U to, _enum::VectorOrder order, _enum::VectorUniqueness uniqueness)`：返回一个长度为$size$的随机数组`vector<R>`，数组元素为$[from, to]$之间的随机值，数组的排序顺序为`order`，数组的元素是否唯一为`uniqueness`。
+
+
+**注意**：
+
+1. 对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
+
+2. 对于后两个函数， `order`的默认值为`Random`即乱序，`uniqueness`的默认值为`Duplicate`即元素不唯一，请参考[数组类型](/user/enum/vector_enum.md)。
+
+3. 对于第三个函数，`T`必须为整型；对于第四个函数，`R`必须为整型, `T`和`U`必须为能够转换成`R`的类型。
 
 ### 示例
 

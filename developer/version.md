@@ -8,6 +8,7 @@
   - SonTree：指定儿子数的树。
   - StartReachableGraph：单源可达图。一个有向图，从一个指定点出发可以到达其他所有的点。
   - rand_range / rand_range_query: 随机（多个）范围。
+  - rand_vector可以指定升降序，元素是否相同。
 
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
