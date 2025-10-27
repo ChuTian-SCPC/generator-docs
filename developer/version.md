@@ -13,7 +13,11 @@
   - 修复生成`SimplePolygon`时MSVC产生的bug。
   - 修复生成`ConvexHull`时有相同的点的bug。
   - 修复了dev-cpp的编译问题。
-  - 修复了rand_sum在边界上可能会越界的bug。
+  - 修复了`rand_sum`在边界上可能会越界的bug。
+  - 修复了`__change_to_int`中`static_cast`错误的转换为`T`而不是`R`。
+
+- 其他：
+  - 给字符串和类型转换增加cache，改善warning输出体验。
 ### version 0.9.0
 
 2025-3-7
