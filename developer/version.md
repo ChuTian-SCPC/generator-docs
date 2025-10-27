@@ -19,6 +19,7 @@
 
 - 其他：
   - 给字符串和类型转换增加cache，改善warning输出体验。
+  - 使用`is_range_contained<T, R>`，对整型直接安全转换不再报warning。
 ### version 0.9.0
 
 2025-3-7
