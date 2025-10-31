@@ -52,6 +52,45 @@
 
 这也是设计`swap_node`的[思路](/developer/algorithm/swap_node.md)。
 
+### 随机以及获取最小最大可能的边数
+
+所有的图都有三个函数：
+
+- `long long min_edge_count()`：返回在当前设置下最少可能的边数。
+
+- `long long max_edge_count()`：返回在当前设置下最多可能的边数，这个值不受`edge_limit`的限制。
+
+- `void rand_edge_count(long long from = _setting::auto_edge_limit, long long to = _setting::auto_edge_limit)`：随机一个边数。
+
+    - `auto_edge_limit`表示为自动设置边数范围，详见[设置](/user/setting/setting.md)。
+
+    - 边数下界受到`from`和`min_edge_count()`的限制，取最大值。
+
+    - 边数上界受到`to`，`max_edge_count()`和`edge_limit`的限制，取最小值。
+
+#### 示例
+
+假设题目要求一个图$n(2\le n\le 10^5)$个点，$m(1\le m\le 10^5)$条边。
+
+在设置结点数之后可以不用自己计算边数的限制。
+
+```cpp
+#include "generator.h"
+using namespace std;
+using namespace generator::all;
+
+int main() {
+    init_gen();
+    unweight::Graph g(rand_int(2, 100000));
+    std::cout << g.node_count() << std::endl;
+    g.rand_edge_count(1, 100000);
+    std::cout << g.edge_count() << std::endl;
+    g.rand_edge_count(std::min(g.max_edge_count(), 100000LL), 100000); // 设置最多可能的边数
+    std::cout << g.edge_count() << std::endl;
+    return 0;
+}
+```
+
 ### 输出格式
 
 所有的图的通用输出格式为:

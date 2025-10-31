@@ -10,6 +10,7 @@
   - rand_range / rand_range_query: 随机（多个）范围。
   - rand_vector可以指定升降序，元素是否相同。
   - ProbTable：rand_prob使用概率表。
+  - rand/min/max_edge_count。
 
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
