@@ -1,6 +1,9 @@
 
 ### development
 
+- 重构：
+  - 让`rand_bracket_seq`均匀随机。
+
 - 新增功能：
   - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
   - 添加测试，新增workflow检测push和pr是否通过测试。
