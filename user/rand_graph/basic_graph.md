@@ -85,7 +85,7 @@ int main() {
     std::cout << g.node_count() << std::endl;
     g.rand_edge_count(1, 100000);
     std::cout << g.edge_count() << std::endl;
-    g.rand_edge_count(std::min(g.max_edge_count(), 100000LL), 100000); // 设置最多可能的边数
+    g.set_edge_count(std::min(g.max_edge_count(), 100000LL)); // 设置最多可能的边数
     std::cout << g.edge_count() << std::endl;
     return 0;
 }

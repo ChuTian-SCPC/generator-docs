@@ -42,6 +42,12 @@
 
 - `time_limit_inf`：表示时间限制为无限的数，默认为$-1$。
 
+- `edge_count_inf`：表示边数为无限的数，默认为$-1$。
+
+- `auto_edge_limit`：在使用`rand_edge_count`时，表示自动设置边数的范围，默认为$-2$。
+
+- `count_range_inf`：表示`CountRange`计数范围为无限的数，默认为$-1$。
+
 ### 不建议修改配置项
 
 - `_path_split`：当前系统路径分隔符。
@@ -67,7 +73,3 @@
 - `_error_return`：当运行代码出现错误时的返回值，默认为$-1$。
 
 - `_rand_sum_sum_limit`：在使用`rand_sum`时，对于该值以上的`sum`采用一种较快但不完全随机的策略，默认为$10^6$。
-
-- `_edge_count_inf`：表示边数为无限的数，默认为$-1$。
-
-- `_auto_edge_limit`：在使用`rand_edge_count`时，表示自动设置边数的范围，默认为$-2$。

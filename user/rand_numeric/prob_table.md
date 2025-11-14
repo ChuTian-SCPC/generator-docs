@@ -8,7 +8,7 @@
 
 - `ProbTable<KeyType>(const Con& map)`：构造一个概率表，其中map的类型为`std::map<KeyType, ValueType>`或者`std::unordered_map<KeyType, ValueType>`，其中`ValueType`为整型。
 
-### 其他函数：
+### 其他函数
 
 - `void add(const KeyType& key, ValueType value)`：添加一个键值对`(key, value)`到概率表中。
 
@@ -28,7 +28,7 @@
 
     - 概率表的最大容量不能超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)，
 
-### 性能测试：
+### 性能测试
 
 参考`test_numeric.hpp`的性能测试：
 

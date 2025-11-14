@@ -8,6 +8,7 @@
 
 - `rand_vector<R, T, U>(int size, T from, U to, _enum::VectorOrder order, _enum::VectorUniqueness uniqueness)`：返回一个长度为$size$的随机数组`vector<R>`，数组元素为$[from, to]$之间的随机值，数组的排序顺序为`order`，数组的元素是否唯一为`uniqueness`。
 
+- `std::vector<T> rand_vector(int size, std::vector<CountRange<T>> limits)`：返回一个长度为$size$的随机数组`vector<T>`，数组元素被[limits](/user/rand_array/count_range.md)限制。
 
 **注意**：
 
