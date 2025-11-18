@@ -14,6 +14,7 @@
   - rand_vector可以指定升降序，元素是否相同。限制个数。
   - ProbTable：rand_prob使用概率表。
   - rand/min/max_edge_count。
+  - rand_vector_by_index
 
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
