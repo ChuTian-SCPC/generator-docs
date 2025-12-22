@@ -3,6 +3,8 @@
 
 - 重构：
   - 让`rand_bracket_seq`均匀随机。
+  - `CommandFunc`和`CommandPath`继承自`_Program`, 重构了调用程序的部分。
+  - 重构了generate inputs,generate ouputs,validate,hack,compare的部分，让log更友好。
 
 - 新增功能：
   - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
@@ -14,7 +16,9 @@
   - rand_vector可以指定升降序，元素是否相同。限制个数。
   - ProbTable：rand_prob使用概率表。
   - rand/min/max_edge_count。
-  - rand_vector_by_index
+  - rand_vector_by_index。
+  - NormalDistribution,LogNormalDistribution：正态分布和对数正态分布。
+  - Workflow：整合出题流程。
 
 - 修复bugs：
   - 修复生成`SimplePolygon`时MSVC产生的bug。
@@ -26,6 +30,7 @@
 - 其他：
   - 给字符串和类型转换增加cache，改善warning输出体验。
   - 使用`is_range_contained<T, R>`，对整型直接安全转换不再报warning。
+  - 使用`_extra_run_time`，避免kill在time_limit上造成误判。
 ### version 0.9.0
 
 2025-3-7
