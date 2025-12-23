@@ -21,7 +21,7 @@
     * [本地判题和SPJ](/user/io/checker.md)
     * [比对(Compare)](/user/io/compare.md)
     * [对拍(Hack)](/user/io/hack.md)
-    
+    * [工作流(Workflow)](/user/io/workflow.md)
   * 生成随机数
     * [随机bool](/user/rand_numeric/rand_bool.md)
     * [随机整数](/user/rand_numeric/rand_int.md) 
@@ -31,6 +31,7 @@
     * [随机字符](/user/rand_numeric/rand_char.md)
     * [不等概率随机](/user/rand_numeric/rand_prob.md)
     * [随机区间](/user/rand_numeric/rand_range.md)
+    * [正态分布和对数正态分布](/user/rand_numeric/normal_log_normal.md)
   * 生成随机数组
     * [随机数组](/user/rand_array/rand_vector.md)
     * [随机字符串](/user/rand_array/rand_string.md)
