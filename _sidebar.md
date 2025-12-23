@@ -17,10 +17,11 @@
     * [可执行路径与函数管理](/user/io/command_path_func.md)
     * [生成标准输入文件](/user/io/inputs.md)
     * [生成标准输出文件](/user/io/outputs.md)
+    * [数据校验(Validate)](/user/io/validator.md)
     * [本地判题和SPJ](/user/io/checker.md)
     * [比对(Compare)](/user/io/compare.md)
     * [对拍(Hack)](/user/io/hack.md)
-    * [数据校验](/user/io/validator.md)
+    
   * 生成随机数
     * [随机bool](/user/rand_numeric/rand_bool.md)
     * [随机整数](/user/rand_numeric/rand_int.md) 

@@ -7,7 +7,6 @@
   - 重构了generate inputs,generate ouputs,validate,hack,compare的部分，让log更友好。
 
 - 新增功能：
-  - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
   - 添加测试，新增workflow检测push和pr是否通过测试。
   - DegreeTree：指定度数的树。
   - SonTree：指定儿子数的树。
@@ -21,9 +20,6 @@
   - Workflow：整合出题流程。
 
 - 修复bugs：
-  - 修复生成`SimplePolygon`时MSVC产生的bug。
-  - 修复生成`ConvexHull`时有相同的点的bug。
-  - 修复了dev-cpp的编译问题。
   - 修复了`rand_sum`在边界上可能会越界的bug。
   - 修复了`__change_to_int`中`static_cast`错误的转换为`T`而不是`R`。
 
@@ -54,12 +50,18 @@
   - 支持validator验证生成数据合法性。
   - 支持hack。
   - SimplePolygon : 简单多边形。
+  - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
+  - 支持macos。@bandiaoz
 - 修复bugs：
   - 修复树、图输出时存在多余空格的问题。
   - 修复了多次打开文件可能出现的问题。
   - 修复了判断字符串是否是小数形式的错误。
   - 修正一些格式错误。
   - 修正`rand_odd(T n)`,`rand_even(T n)`和`rand_abs(T n)`的表现于`rand_int(T n)`一致。
+  - 修复生成`ConvexHull`时有相同的点的bug。
+  - 修复了dev-cpp的编译问题。
+  - 修复生成`SimplePolygon`时MSVC产生的bug。
+  - 修复生成`FlowerChain`的bug。@bandiaoz
 
 ### version 0.8.0
 

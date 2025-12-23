@@ -26,8 +26,6 @@
 
 - `output_suffix`：生成的随机测试用例文件(输出)的后缀名称，默认为`.out`。
 
-- `same_log_for_class`：控制在生成随机数组、树、图和几何时，对于同一随机函数中重复出现的相同警告信息，是否只显示一次。默认为`false`，即不显示重复信息。
-
 - `time_limit_over_ratio`：在compare中，控制实际测试的时间为所给`time_limit`的倍数，默认为$2$。该值应大于等于$1$。
 
 - `time_limit_check_ratio`：在compare中，控制对于超时为所给`time_limit`的倍数之内的代码进行结果正误的检测，默认为$2$。该值应小于等于`time_limit_over_ratio`。
@@ -62,7 +60,7 @@
 
 - `_lib_folder`：`generator.h`所在的文件夹的路径。
 
-- `_function_count`：当前使用随机函数的数量，用于`compare`时使用`CommandFunc`时计数和区分。
+- `_function_count`：当前使用随机函数的数量，对`CommandFunc`命名时使用。
 
 - `_first_generator_argv`：generator的第一个默认参数，默认为`generator`。
 
@@ -73,3 +71,11 @@
 - `_error_return`：当运行代码出现错误时的返回值，默认为$-1$。
 
 - `_rand_sum_sum_limit`：在使用`rand_sum`时，对于该值以上的`sum`采用一种较快但不完全随机的策略，默认为$10^6$。
+
+- `_time_limit_auto`：表示自动设置时间限制，默认为$-2$。
+
+- `_auto_int`：表示自动设置时的整型值，默认为$-2$。
+
+- `_extra_run_time`：额外运行时间(ms)，避免在边界值时kill被错判，默认为$100$。
+
+- `_empty_program_name`：表示程序为空时的默认名称，默认为空字符串。
