@@ -60,8 +60,6 @@
 
 - `_lib_folder`：`generator.h`所在的文件夹的路径。
 
-- `_function_count`：当前使用随机函数的数量，对`CommandFunc`命名时使用。
-
 - `_first_generator_argv`：generator的第一个默认参数，默认为`generator`。
 
 - `_first_checker_argv`：checker的第一个默认参数，默认为`checker`。
