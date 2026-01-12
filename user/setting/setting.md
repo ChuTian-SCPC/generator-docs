@@ -22,6 +22,8 @@
 
 - `validate_folder`：存放validate结果的文件夹名称, 默认为`validate`。
 
+- `generate_log_folder` ：存放generator生成的log文件夹名称，默认为`gen_log`。
+
 - `input_suffix`：生成的随机测试用例文件(输入)的后缀名称, 默认为`.in`。
 
 - `output_suffix`：生成的随机测试用例文件(输出)的后缀名称，默认为`.out`。
