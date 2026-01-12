@@ -1,5 +1,7 @@
 
-### development
+### version 0.10.0
+
+2026-1-12
 
 - 重构：
   - 让`rand_bracket_seq`均匀随机。
