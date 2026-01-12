@@ -29,3 +29,10 @@ CommandFunc(T&& s);
 `T`是一个可转换为`std::function<void()>`的类型，包括函数指针，lambda函数，仿函数，std::bind等。
 
 注意传入的函数是无传参的，如果希望能够使用有传参的函数，详见[CommandFunc外部传参](/user/io/command_func_extra.md)
+
+### 名称
+
+1. **CommandPath**：名称为可执行文件的名称，不包含路径和扩展名。比如`E:\code\gen.exe`的名称为`gen`。
+
+2. **CommandFunc**：名称为函数的序号，从1开始递增。比如第一个函数的名称为`function1`，第二个函数的名称为`function2`。
+

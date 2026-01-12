@@ -17,10 +17,11 @@
     * [可执行路径与函数管理](/user/io/command_path_func.md)
     * [生成标准输入文件](/user/io/inputs.md)
     * [生成标准输出文件](/user/io/outputs.md)
+    * [数据校验(Validate)](/user/io/validator.md)
     * [本地判题和SPJ](/user/io/checker.md)
     * [比对(Compare)](/user/io/compare.md)
     * [对拍(Hack)](/user/io/hack.md)
-    * [数据校验](/user/io/validator.md)
+    * [工作流(Workflow)](/user/io/workflow.md)
   * 生成随机数
     * [随机bool](/user/rand_numeric/rand_bool.md)
     * [随机整数](/user/rand_numeric/rand_int.md) 
@@ -29,6 +30,8 @@
     * [绝对值范围随机数](/user/rand_numeric/rand_abs.md)
     * [随机字符](/user/rand_numeric/rand_char.md)
     * [不等概率随机](/user/rand_numeric/rand_prob.md)
+    * [随机区间](/user/rand_numeric/rand_range.md)
+    * [正态分布和对数正态分布](/user/rand_numeric/normal_log_normal.md)
   * 生成随机数组
     * [随机数组](/user/rand_array/rand_vector.md)
     * [随机字符串](/user/rand_array/rand_string.md)
@@ -37,6 +40,7 @@
     * [随机数组其元素出现次数为给定值](/user/rand_array/shuffle_index.md)
     * [随机回文串](/user/rand_array/rand_palindrome.md)
     * [随机合法括号序列](/user/rand_array/rand_bracket_seq.md)
+    * [随机多个区间](/user/rand_array/rand_range_query.md)
   * 生成随机树和图
     * [点和边](/user/rand_tree/node_edge.md)
     * [树和图的基础](/user/rand_tree/basic_tree_graph.md)
@@ -46,7 +50,9 @@
     * [菊花图](/user/rand_tree/flower.md)
     * [指定高度的树](/user/rand_tree/height_tree.md)
     * [限制最大度数的树](/user/rand_tree/max_degree_tree.md)
+    * [指定度数的树](/user/rand_tree/degree_tree.md)
     * [限制最大儿子数的树](/user/rand_tree/max_son_tree.md)
+    * [指定儿子数的树](/user/rand_tree/son_tree.md)
     * [菊花带链](/user/rand_tree/flower_chain.md)
     * [图基础](/user/rand_graph/basic_graph.md)
     * [二分图](/user/rand_graph/bipartite_graph.md)
@@ -57,6 +63,7 @@
     * [基环（外向、内向）树](/user/rand_graph/pseudo_tree.md)
     * [仙人掌](/user/rand_graph/cactus.md)
     * [森林](/user/rand_graph/forest.md)
+    * [单源可达图](/user/rand_graph/start_reachable_graph.md)
     * [合并](/user/rand_graph/link.md)
   * 生成随机几何图形
     * [几何基础](/user/rand_geometry/basic_geometry.md)
@@ -74,6 +81,7 @@
 * 开发者手册
   * [版本更迭](/developer/version.md)
   * [修改代码](/developer/modify.md)
+  * [测试](/developer/test.md)
   * 相关问题
     * [Windows中CommandFunc的问题](/developer/problem/windows.md)
   * 随机算法与设计思路

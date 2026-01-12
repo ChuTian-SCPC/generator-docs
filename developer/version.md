@@ -1,13 +1,35 @@
 
-### development
+### version 0.10.0
+
+2026-1-12
+
+- 重构：
+  - 让`rand_bracket_seq`均匀随机。
+  - `CommandFunc`和`CommandPath`继承自`_Program`, 重构了调用程序的部分。
+  - 重构了generate inputs,generate ouputs,validate,hack,compare的部分，让log更友好。
 
 - 新增功能：
-  - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
+  - 添加测试，新增workflow检测push和pr是否通过测试。
+  - DegreeTree：指定度数的树。
+  - SonTree：指定儿子数的树。
+  - StartReachableGraph：单源可达图。一个有向图，从一个指定点出发可以到达其他所有的点。
+  - rand_range / rand_range_query: 随机（多个）范围。
+  - rand_vector可以指定升降序，元素是否相同。限制个数。
+  - ProbTable：rand_prob使用概率表。
+  - rand/min/max_edge_count。
+  - rand_vector_by_index。
+  - NormalDistribution,LogNormalDistribution：正态分布和对数正态分布。
+  - Workflow：整合出题流程。
 
 - 修复bugs：
-  - 修复了`ConvexHull`的bug。
-  - 修复了dev-cpp的编译问题。
+  - 修复了`rand_sum`在边界上可能会越界的bug。
+  - 修复了`__change_to_int`中`static_cast`错误的转换为`T`而不是`R`。
 
+- 其他：
+  - 给字符串和类型转换增加cache，改善warning输出体验。
+  - 使用`is_range_contained<T, R>`，对整型直接安全转换不再报warning。
+  - 使用`_extra_run_time`，避免kill在time_limit上造成误判。
+  
 ### version 0.9.0
 
 2025-3-7
@@ -31,12 +53,18 @@
   - 支持validator验证生成数据合法性。
   - 支持hack。
   - SimplePolygon : 简单多边形。
+  - 修改xmake.lua，新增workflow检测push和pr是否把src合并成generator.h。
+  - 支持macos。@bandiaoz
 - 修复bugs：
   - 修复树、图输出时存在多余空格的问题。
   - 修复了多次打开文件可能出现的问题。
   - 修复了判断字符串是否是小数形式的错误。
   - 修正一些格式错误。
   - 修正`rand_odd(T n)`,`rand_even(T n)`和`rand_abs(T n)`的表现于`rand_int(T n)`一致。
+  - 修复生成`ConvexHull`时有相同的点的bug。
+  - 修复了dev-cpp的编译问题。
+  - 修复生成`SimplePolygon`时MSVC产生的bug。
+  - 修复生成`FlowerChain`的bug。@bandiaoz
 
 ### version 0.8.0
 

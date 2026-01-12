@@ -14,19 +14,13 @@
 
 ### 结果存储规则
 
-1. **CommandPath**：
+参考[可执行路径与函数的名称](/user/io/command_path_func.md#名称)
 
-   - 输出存储路径：`compare_folder/命令名称/`。示例：`gen.exe`的结果存储在`cmp/gen/`下。
-  
-   - log储存路径：`compare_folder/命名名称.log`。
+输出会储存在`compare_folder/名称/`中的目录下。
 
-2. **CommandFunc**：
-   
-   - 输出存储路径：`compare_folder/function序号/`。示例：如果有两个`CommandFunc`，第一个函数结果存储在`cmp/function1/`，第二个存储在`cmp/function2/`。
-  
-   - log储存路径：`compare_folder/function序号.log`。
+log会储存在`compare_folder/名称.log`中。
 
-**注意**：混用`CommandPath`和`CommandFunc`时，请确保命令名称不会与`function+序号`的命名方式冲突。
+**注意**：混用`CommandPath`和`CommandFunc`时，请确保命令名称不会产生冲突。
 
 ### 函数
 

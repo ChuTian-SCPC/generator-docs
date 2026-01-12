@@ -4,7 +4,23 @@
 
 - `rand_vector<T>(int from, int to, std::function<T()> func)`：返回一个长度范围为$[from, to]$的随机数组`vector<T>`，数组元素为`func()`的返回值。
 
-**注意**：对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
+- `rand_vector<T>(int size, T from, T to, _enum::VectorOrder order, _enum::VectorUniqueness uniqueness)`：返回一个长度为$size$的随机数组`vector<T>`，数组元素为$[from, to]$之间的随机值，数组的排序顺序为`order`，数组的元素是否唯一为`uniqueness`。
+
+- `rand_vector<R, T, U>(int size, T from, U to, _enum::VectorOrder order, _enum::VectorUniqueness uniqueness)`：返回一个长度为$size$的随机数组`vector<R>`，数组元素为$[from, to]$之间的随机值，数组的排序顺序为`order`，数组的元素是否唯一为`uniqueness`。
+
+- `std::vector<T> rand_vector(int size, std::vector<CountRange<T>> limits)`：返回一个长度为$size$的随机数组`vector<T>`，数组元素被[limits](/user/rand_array/count_range.md)限制。
+
+- `rand_vector_by_index<T>(int size, std::function<T(int)> func)`：返回一个长度为$size$的随机数组`vector<T>`，数组元素为`func(i)`的返回值，其中$i$为数组的索引, 从$0$开始。
+
+- `rand_vector_by_index<T>(int from, int to, std::function<T(int)> func)`：返回一个长度范围为$[from, to]$的随机数组`vector<T>`，数组元素为`func(i)`的返回值，其中$i$为数组的索引, 从$0$开始。
+
+**注意**：
+
+1. 对于传入的长度，其值不能够超过`vector_limit`的限制，如果需要修改，请参考[设置](/user/setting/setting.md)。
+
+2. 对于后两个函数， `order`的默认值为`Random`即乱序，`uniqueness`的默认值为`Duplicate`即元素不唯一，请参考[数组类型](/user/enum/vector_enum.md)。
+
+3. 对于第三个函数，`T`必须为整型；对于第四个函数，`R`必须为整型, `T`和`U`必须为能够转换成`R`的类型。
 
 ### 示例
 
@@ -36,8 +52,13 @@ int main() {
   auto v3 = rand_vector<vector<int>>(10, []() {
     return rand_vector<int>(10, gen);
   });
+  // 生成数组，第i个位置的元素为[0, i]之间的随机整数
+  auto v4 = rand_vector_by_index<int>(10, [](int i) { 
+    return rand_int(i + 1); 
+  });  
   cout << v1 << v2;
   for (auto& v : v3) cout << v;
+  cout << v4;
   return 0;
 }
 ```

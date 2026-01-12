@@ -45,6 +45,19 @@ set_left_right(int left, int right)
 
 **注意**：这个会判断$left + right$是否等于$node\_count$，如果不等于，会将$node\_count$设置为$left + right$。
 
+可以使用以下函数随机左右部大小：
+
+```cpp
+void rand_left()
+```
+
+**注意**：
+
+- 随机左部时，边数必须已经确定。
+
+- 在使用[rand_edge_count](/user/rand_graph/basic_graph.md#随机以及获取最小最大可能的边数)时，如果$left = -1$，则会调用`rand_left()`随机左部大小。
+
+
 ### 示例
 
 1. 生成一个$10$个结点，$15$条边的二分图，左右部随机大小。

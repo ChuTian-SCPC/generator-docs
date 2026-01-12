@@ -37,6 +37,20 @@ set_row_column(int row, int column, int ignore = 0)
 
 考虑到网格图边数上限比较难计算，在随机`row`的情况下，会计算出最大可能的边数`m`，如果`edge_count`大于它，会将`edge_count`设为`m`。
 
+可以使用以下函数随机行和列大小：
+
+```cpp
+void rand_row()
+```
+
+**注意**：
+
+- 随机行时，边数必须已经确定。
+
+- 在使用[rand_edge_count](/user/rand_graph/basic_graph.md#随机以及获取最小最大可能的边数)时，如果`row <= 0`，则会调用`rand_row()`随机行大小。
+
+
+
 ### 示例：
 
 1. 生成一个没有权重的无向网格图，结点数为$9$，$3$行$3$列，$12$条边。
