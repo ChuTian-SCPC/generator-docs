@@ -24,6 +24,12 @@
 
 - `generate_log_folder` ：存放generator生成的log文件夹名称，默认为`gen_log`。
 
+- `test_folder`：校验相关的文件夹名称, 默认为`test`。
+
+- `test_validator_sub_folder`：校验validator的子文件夹名称, 默认为`validator`。
+
+- `test_checker_sub_folder`：校验checker的子文件夹名称, 默认为`checker`。
+
 - `input_suffix`：生成的随机测试用例文件(输入)的后缀名称, 默认为`.in`。
 
 - `output_suffix`：生成的随机测试用例文件(输出)的后缀名称，默认为`.out`。
