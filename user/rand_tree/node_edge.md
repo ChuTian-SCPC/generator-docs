@@ -58,7 +58,7 @@ class _Edge;
 
 它们可以通过函数[获取或设置](/user/tools/setter_getter.md)。
 
-并且对于**无边权**的情况，可以通过函数`std::pair<int, int> edge()`获取这条边；对于**有边权**的情况，可以通过函数`std::tuple<int, int, T> edge()`获取这条边。
+并且对于**无边权**的情况，可以通过函数`std::tuple<int, int> edge()`获取这条边；对于**有边权**的情况，可以通过函数`std::tuple<int, int, T> edge()`获取这条边。
 
 #### 输出格式
 
